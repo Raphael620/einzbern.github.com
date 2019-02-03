@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="js" lang="zh-CN"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Raphael</title>
+
+
+</style>
+<link id="twentyfifteen-style-css" href="./css/buju.css" rel="stylesheet" type="text/css" media="all">
+<link id="genericons-css" href="./css/biaoshi.css" rel="stylesheet" type="text/css" media="all">
+
+
+<style id="twentyfifteen-style-inline-css" type="text/css">
+	/* Color Scheme */
+
+	/* Background Color */
+	body {
+		background-color: #e1ffff;
+	}
+
+	/* Sidebar Background Color */
+	body:before,
+	.site-header {
+		background-color: #6495ed;
+	}
+
+	/* Box Background Color */
+	.post-navigation,
+	.pagination,
+	.secondary,
+	.site-footer,
+	.hentry,
+	.page-header,
+	.page-content,
+	.comments-area,
+	.widecolumn {
+		background-color: #ffffff;
+	}
+
+	/* Box Background Color */
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	.pagination .prev,
+	.pagination .next,
+	.widget_calendar tbody a,
+	.widget_calendar tbody a:hover,
+	.widget_calendar tbody a:focus,
+	.page-links a,
+	.page-links a:hover,
+	.page-links a:focus,
+	.sticky-post {
+		color: #ffffff;
+	}
+
+
+	@media screen and (min-width: 59.6875em) {
+		/* Make sure its transparent on desktop */
+		.site-header,
+		.secondary {
+			background-color: transparent;
+		}
+
+		/* Sidebar Background Color */
+		.widget button,
+		.widget input[type="button"],
+		.widget input[type="reset"],
+		.widget input[type="submit"],
+		.widget_calendar tbody a,
+		.widget_calendar tbody a:hover,
+		.widget_calendar tbody a:focus {
+			color: #00ffff;
+		}
+
+		/* Sidebar Link Color */
+		.secondary-toggle:before {
+			color: #ffffff;
+		}
+
+		.secondary-toggle {
+			border-color: #ffffff; /* Fallback for IE7 and IE8 */
+			border-color: rgba( 255, 255, 255, 0.8);
+		}
+
+		.secondary-toggle:hover,
+		.secondary-toggle:focus {
+			border-color: #ffffff; /* Fallback for IE7 and IE8 */
+			border-color: rgba( 255, 255, 255, 0.8);
+		}
+
+		/* Sidebar Link Color */
+		.secondary a,
+		.dropdown-toggle:after,
+		.widget-title,
+		.widget blockquote cite,
+		.widget blockquote small {
+			color: #ffffff;
+		}
+
+		.widget button,
+		.widget input[type="button"],
+		.widget input[type="reset"],
+		.widget input[type="submit"],
+		.widget_calendar tbody a {
+			background-color: #ffffff;
+		}
+
+		.textwidget a {
+			border-color: #ffffff;
+		}
+
+		/* Sidebar Text Color */
+		.secondary a:hover,
+		.secondary a:focus,
+		.main-navigation .menu-item-description,
+		.widget,
+		.widget blockquote,
+		.widget .wp-caption-text,
+		.widget .gallery-caption {
+			color: rgba( 255, 255, 255, 0.7);
+		}
+
+		.widget button:hover,
+		.widget button:focus,
+		.widget input[type="button"]:hover,
+		.widget input[type="button"]:focus,
+		.widget input[type="reset"]:hover,
+		.widget input[type="reset"]:focus,
+		.widget input[type="submit"]:hover,
+		.widget input[type="submit"]:focus,
+		.widget_calendar tbody a:hover,
+		.widget_calendar tbody a:focus {
+			background-color: rgba( 255, 255, 255, 0.7);
+		}
+
+		.widget blockquote {
+			border-color: rgba( 255, 255, 255, 0.7);
+		}
+
+		
+</style>
+
+<!--背景设置-->
+<meta name="generator" content="WordPress 4.8.6">
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<style id="custom-background-css" type="text/css">
+body.custom-background { background-image: url("./bg.jpg"); background-position: center top; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }
+</style>
+</head>
+
+
+<script src="./css/button1.js" type="text/javascript"></script>
+<script src="./css/button2.js" type="text/javascript"></script>
+
+
+<body class="home blog custom-background">
+<div class="hfeed site" id="page">
+	<div class="sidebar" id="sidebar" style="top: 0px;">
+		<header class="site-header" id="masthead" role="banner">
+			<div class="site-branding">
+				<h1 class="site-title"><a href="." rel="home">刘泽霖个人主页</a></h1>
+				<p><a class="site-description" href="http://physics.ustc.edu.cn">USTC-Phys</a></p>
+				<button class="secondary-toggle">menu</button>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header -->
+
+		<div class="secondary" id="secondary">
+				<nav class="main-navigation" id="site-navigation" role="navigation">
+				</nav><!-- .main-navigation -->
+		<div class="widget-area" id="widget-area" role="complementary">
+				
+
+			<aside class="widget widget_recent_entries" id="recent-posts-2">
+				<h2 class="widget-title">Introduction</h2>
+				<ul>
+				<li><a href="./education.html">Education</a></li>
+				<li><a href="./research.html">Research Experience</a></li>
+				<li><a href="./publication.html">Publication</a></li>
+				</ul>
+				</aside>	
+
+			<aside class="widget widget_recent_comments" id="recent-comments-2">
+				<h2 class="widget-title">Community</h2>
+				<ul>
+				<li><a href="./syy/xcb.html">Student Union</a></li>
+				<li><a href="./recourse">Public</a></li>
+				<li><a href="http://home.ustc.edu.cn/~mz620/">More</a></li>
+				</ul>
+			</aside>
+
+			<aside class="widget widget_recent_comments" id="recent-comments-2">
+				<h2 class="widget-title">Link</h2>
+				<ul>
+				<li><a href="http://lib.ustc.edu.cn">Library</a></li>
+				<li><a href="http://mis.teach.ustc.edu.cn">Teaching</a></li>
+				<li><a href="http://mail.ustc.edu.cn">Mail</a></li>
+				<li><a href="http://ustc.edu.cn">Ustc</a></li>
+				<li><a href="http://www.baidu.com">Baidu</a></li>
+				</ul>
+			</aside>
+
+			<aside class="widget widget_recent_comments" id="recent-comments-2">
+				<h2 class="widget-title">More</h2>
+				<ul>
+				<li><a href="">No More ~</a></li>
+				</ul>
+			</aside>
+
+	</div><!-- .widget-area -->
+		
+	</div><!-- .secondary -->
+
+	</div><!-- .sidebar -->
+
+	<div class="site-content" id="content">
+
+	<div class="content-area" id="primary">
+		<main class="site-main" id="main" role="main">
+
+
+<article class="post-35 post type-post status-publish format-standard hentry category-saying" id="post-35">
+	<header class="entry-header">
+		<h2 class="entry-title">Introduction</h2>
+		</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<!--<embed src="./jieshao.pdf" width=600 height="700">-->
+		<table border=1 bordercolor=#111111 cellspacing=0 align="center" cellpadding=2 width=600>
+			<tr align="center">
+				<td width=80%><img src="./img/illya.jpeg"></td>
+				<td width=80%><img src="./img/yuu.jpg"></td></tr>
+			<tr align="center"><td colspan=2 width=80%><img src="./img/dl.png"></td></tr>
+		</table>
+		<h6>施工中…</h6>
+		<h6 style="text-transform:none;">请联系mz620@mail.ustc.edu.cn</h6>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="posted-on">2018/6</span>
+		<span class="cat-links"><a href="./jieshao.pptx">download</a></span></span>
+		<span class="comments-link">contact(no)</span>
+	</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+
+
+		</main><!-- .site-main -->
+	</div><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+
+	<footer class="site-footer" id="colophon" role="contentinfo">
+		<div class="site-info">
+			<a href="https://home.ustc.edu.cn/~mz620">copyright © Raphael 2018</a>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+
+<!--hanbao必须-->
+<script src="./css/button5.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var screenReaderText = {"expand":"<span class=\"screen-reader-text\">\u5c55\u5f00\u5b50\u83dc\u5355<\/span>","collapse":"<span class=\"screen-reader-text\">\u6298\u53e0\u5b50\u83dc\u5355<\/span>"};
+</script>
+<script src="./css/button3.js" type="text/javascript"></script>
+<script src="./css/button4.js" type="text/javascript"></script>
+
+
+</body></html>
